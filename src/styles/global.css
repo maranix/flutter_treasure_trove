@@ -1,0 +1,15 @@
+:root {
+  --color-bg: #f9f9f9;
+}
+
+[data-theme="light"] {
+  --color-bg: #f9f9f9;
+}
+
+[data-theme="dark"] {
+  --color-bg: #282c36;
+}
+
+html, body {
+  background-color: var(--color-bg);
+}
