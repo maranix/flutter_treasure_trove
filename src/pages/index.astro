@@ -1,9 +1,33 @@
 ---
 import BaseHead from "../layouts/BaseHead.astro";
-import ToggleTheme from "../components/ToggleTheme.astro"
 ---
 
 <BaseHead title="Astro">
-    <h1>Astro</h1>
-    <ToggleTheme />
+    <div class="container">
+        <div class="text-supreme">Widgets</div>
+        <div class="text-supreme">Snippets</div>
+        <div class="text-supreme">Wizardry!</div>
+    </div>
 </BaseHead>
+
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container :nth-child(2) {
+        align-self: center;
+    }
+
+    .container :last-child {
+        align-self: end;
+    }
+
+    .text-supreme {
+        font-size: 10rem;
+        font-weight: 900;
+        padding: 0.8rem;
+    }
+</style>
